@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker | Logic Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h2>Finance Tracker</h2>
+            <p>Track your logic & your money</p>
+        </header>
+
+        <div class="balance-card">
+            <h3>Current Balance</h3>
+            <h1 id="totalBalance">$0.00</h1>
+            <div class="income-expense">
+                <div class="stat">
+                    <span>Income</span>
+                    <p id="totalIncome" class="plus">+$0.00</p>
+                </div>
+                <div class="stat">
+                    <span>Expense</span>
+                    <p id="totalExpense" class="minus">-$0.00</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="add-section">
+            <h4>Add New Transaction</h4>
+            <form id="financeForm">
+                <input type="text" id="text" placeholder="Description (e.g. Salary, Pizza)" required>
+                <input type="number" id="amount" placeholder="Amount (- for expense, + for income)" required>
+                <button type="submit" class="btn-submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section class="history-section">
+            <h4>History</h4>
+            <ul id="list" class="transaction-list">
+                <!-- <li class="item plus">
+                    Salary <span>+$500</span> <button class="delete-btn">x</button>
+                </li>
+                <li class="item minus">
+                    Coffee <span>-$5</span> <button class="delete-btn">x</button>
+                </li> -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

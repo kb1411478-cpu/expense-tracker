@@ -1,0 +1,90 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body {
+    background-color: #eef2f3;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+header { text-align: center; margin-bottom: 25px; }
+header h2 { color: #2c3e50; }
+header p { font-size: 0.8rem; color: #7f8c8d; }
+
+.balance-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.plus { color: #2ecc71; font-weight: bold; }
+.minus { color: #e74c3c; font-weight: bold; }
+
+.add-section input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-submit:hover { background-color: #8e44ad; }
+
+.history-section { margin-top: 30px; }
+
+.transaction-list { list-style: none; margin-top: 15px; }
+
+.item {
+    background: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    position: relative;
+    border-right: 5px solid #ddd;
+}
+
+.item.plus { border-right-color: #2ecc71; }
+.item.minus { border-right-color: #e74c3c; }
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
